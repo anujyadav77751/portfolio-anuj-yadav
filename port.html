@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuj Yadav | Frontend Developer</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #020617;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+header nav a:hover {
+  color: #6366f1;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero img {
+  width: 140px;
+  height: 180px;
+  border-radius: 8px;
+  border: 3px solid #6366f1;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 28px;
+}
+
+.hero p {
+  color: #cbd5f5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 22px;
+  background: #6366f1;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #4f46e5;
+}
+
+/* SECTION */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #6366f1;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills span {
+  padding: 8px 14px;
+  background: #020617;
+  border: 1px solid #6366f1;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #a5b4fc;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* EDUCATION */
+.edu-box {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Anuj Yadav</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="profile.jpg" alt="Anuj Yadav">
+  <h2>Frontend Developer</h2>
+  <p>HTML • CSS • JavaScript • React • Python • MySQL</p>
+  <a href="resume.pdf" class="btn" download>Download Resume</a>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Motivated entry-level Frontend Developer with strong knowledge of
+    HTML, CSS, JavaScript, React.js, Python, and MySQL.
+    Passionate about building responsive and user-friendly web applications.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React.js</span>
+    <span>Python</span>
+    <span>MySQL</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Online Examination System</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>JavaScript, API</p>
+    </div>
+
+    <div class="card">
+      <h3>Todo App</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="card">
+      <h3>Calculator App</h3>
+      <p>HTML, CSS</p>
+    </div>
+
+    <div class="card">
+      <h3>Stopwatch App (UI)</h3>
+      <p>HTML, CSS</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="edu-box">
+    <strong>Bachelor of Engineering (IT)</strong><br>
+    Malwa Institute of Science & Technology, Indore<br>
+    2019 – 2023 | CGPA: 7.35
+  </div>
+
+  <div class="edu-box">
+    <strong>12th (MP Board)</strong> – 2019
+  </div>
+
+  <div class="edu-box">
+    <strong>10th (MP Board)</strong> – 2017
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: anujyadav77751@gmail.com</p>
+  <p>Phone: +91 8349765070</p>
+  <p>Location: Indore, Madhya Pradesh</p>
+  <p>LinkedIn: https://github.com/anujyadav77751/Anuj-Yadav.git</p>
+  <p>Portfolio: https://anujyadav77751.github.io/Anuj-Yadav/</p>
+</section>
+
+<footer>
+  © 2025 Anuj Yadav | Frontend Developer
+</footer>
+
+</body>
+</html>
